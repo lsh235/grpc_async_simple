@@ -143,6 +143,7 @@
     </Link>
     <PreBuildEvent>
       <Command>mkdir ..\protos-build
+
 "../../grpc-cpp/bin/protoc.exe" --grpc_out=../protos-build/ --plugin=protoc-gen-grpc=../../grpc-cpp/bin/grpc_cpp_plugin.exe -I=../../protos helloworld.proto
 "../../grpc-cpp/bin/protoc.exe" --cpp_out=../protos-build/ -I=../../protos helloworld.proto</Command>
     </PreBuildEvent>
